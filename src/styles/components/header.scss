@@ -1,20 +1,18 @@
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 10px 60px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   background: #7545ff;
   .header-items {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     gap: 50px;
     .header-item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex-all-center;
       text-align: center;
       gap: 10px;
       font-size: 18px;
@@ -37,9 +35,7 @@
     display: flex;
     gap: 70px;
     .ask {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex-all-center;
       gap: 6px;
       padding: 12px 24px;
       text-align: center;
@@ -57,9 +53,7 @@
       }
     }
     .profile {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex-all-center;
       gap: 8px;
       text-align: center;
       color: white;
@@ -71,11 +65,9 @@
     }
   }
   @include mobile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #7545ff;
     width: 100%;
+    @include flex-all-center;
+    background: #7545ff;
     .header-items {
       display: none;
     }

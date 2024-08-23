@@ -31,7 +31,6 @@ const PopUp = ({ isOpen, onClose }: { isOpen: boolean; onClose: any }) => {
 
   useEffect(() => {
     if (!isOpen) {
-      // Reset all state variables when the pop-up is closed
       setVacationDestination("");
       setDateRangeStart("");
       setDateRangeEnd("");

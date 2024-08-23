@@ -1,24 +1,22 @@
 .post-card {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   gap: 24px;
   padding: 24px;
+  border-radius: 10px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   background: white;
-  border-radius: 10px;
   .tag {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-all-center;
     padding: 12px 16px;
+    border: 1px solid #eaecf0;
+    border-radius: 12px;
     font-size: 18px;
     font-weight: 500;
     line-height: 21px;
-    border: 1px solid #eaecf0;
-    border-radius: 12px;
     background: #f8fafc;
     color: #334d5e;
   }
@@ -30,8 +28,8 @@
   }
   .user {
     display: flex;
-    justify-content: center;
     align-items: flex-end;
+    justify-content: center;
     gap: 12px;
     .user-name {
       font-size: 14px;
@@ -45,13 +43,13 @@
       gap: 7px;
       .user-title {
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
         padding: 2px 7px;
-        font-size: 11px;
-        font-weight: 600;
         border: 1px solid #334d5eb2;
         border-radius: 2px;
+        font-size: 11px;
+        font-weight: 600;
         color: #334d5eb2;
       }
       .user-tier {

@@ -3,14 +3,14 @@
   align-items: flex-start;
   justify-content: center;
   padding: 20px 0;
-  background: #f3f3f3;
   margin-bottom: -145px;
+  background: #f3f3f3;
   .home-page-wrapper {
+    width: 1065px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     gap: 20px;
-    width: 1065px;
   }
   @include mobile {
     display: none;

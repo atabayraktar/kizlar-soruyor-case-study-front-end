@@ -1,7 +1,5 @@
 .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-all-center;
   text-align: center;
   border: none;
   font-family: "Roboto";
@@ -17,17 +15,17 @@
 .btn-plan-now {
   button {
     @extend .btn;
-    border-radius: 10px;
     padding: 20px 40px;
-    font-size: 24px;
     margin-top: 25px;
+    border-radius: 10px;
+    font-size: 24px;
   }
 }
 .btn-explore-now {
   button {
     @extend .btn;
-    border-radius: 5px;
     padding: 10px 30px;
+    border-radius: 5px;
     font-size: 16px;
   }
 }

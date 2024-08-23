@@ -1,3 +1,5 @@
+import UserBadge from "./UserBadge";
+
 const PostCard = () => {
   return (
     <div className="post-card">
@@ -6,19 +8,12 @@ const PostCard = () => {
         Lorem ipsum dolor sit amet consectetur. Duis posuere nullam augue
         cursus.
       </div>
-      <div className="user">
-        <img
-          src="/images/placeholders/placeholder-avatar-img.svg"
-          alt="use image"
-        />
-        <div>
-          <div className="user-name">Makenna Carder</div>
-          <div className="user-info">
-            <div className="user-title">Fenomen</div>
-            <div className="user-tier">Xper 2</div>
-          </div>
-        </div>
-      </div>
+      <UserBadge
+        img="/images/placeholders/placeholder-avatar-img.svg"
+        name="Makenna Carder"
+        title="Fenomen"
+        tier="Xper 2"
+      />
       <div className="text">
         Lorem ipsum dolor sit amet consectetur. Mi suscipit risus vulputate urna
         ullamcorper facilisi at.
