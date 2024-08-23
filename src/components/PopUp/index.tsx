@@ -50,7 +50,7 @@ const PopUp = ({ isOpen, onClose }: { isOpen: boolean; onClose: any }) => {
       setIsLoading(false);
       setShowTravelGuide(true);
       setTitle("Travel Guide");
-    }, 500000);
+    }, 5000);
   };
 
   if (!isOpen) return null;
