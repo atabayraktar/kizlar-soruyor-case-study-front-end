@@ -70,4 +70,23 @@
       }
     }
   }
+  @include mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #7545ff;
+    width: 100%;
+    .header-items {
+      display: none;
+    }
+    .logo {
+      img {
+        width: 170px;
+        height: 45px;
+      }
+    }
+    .header-actions {
+      display: none;
+    }
+  }
 }

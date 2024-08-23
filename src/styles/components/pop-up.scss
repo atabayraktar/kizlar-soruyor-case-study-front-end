@@ -24,6 +24,9 @@
     &.margin {
       margin-top: 150px;
     }
+    @include mobile {
+      width: 360px;
+    }
     .close-icon {
       position: absolute;
       top: 55px;
@@ -48,6 +51,9 @@
       border-radius: 10px;
       background: #eaecf0;
       margin-bottom: 20px;
+      @include mobile {
+        width: 315px;
+      }
       .question {
         font-size: 18px;
         font-weight: 500;

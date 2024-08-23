@@ -4,7 +4,6 @@
   align-items: center;
   text-align: center;
   border: none;
-  border-radius: 10px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -18,6 +17,7 @@
 .btn-plan-now {
   button {
     @extend .btn;
+    border-radius: 10px;
     padding: 20px 40px;
     font-size: 24px;
     margin-top: 25px;
@@ -26,6 +26,7 @@
 .btn-explore-now {
   button {
     @extend .btn;
+    border-radius: 5px;
     padding: 10px 30px;
     font-size: 16px;
   }

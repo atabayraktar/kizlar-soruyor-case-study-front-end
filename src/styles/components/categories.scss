@@ -60,4 +60,7 @@
       margin-left: -8px;
     }
   }
+  @include mobile {
+    display: none;
+  }
 }
