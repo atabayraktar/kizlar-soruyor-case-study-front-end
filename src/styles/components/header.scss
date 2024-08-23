@@ -1,0 +1,73 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  background: #7545ff;
+  .header-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    .header-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 10px;
+      font-size: 18px;
+      line-height: 20px;
+      color: #fff;
+      cursor: pointer;
+      img {
+        height: 24px;
+        width: 24px;
+      }
+    }
+  }
+  .logo {
+    img {
+      width: 170px;
+      height: 45px;
+    }
+  }
+  .header-actions {
+    display: flex;
+    gap: 70px;
+    .ask {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      padding: 12px 24px;
+      text-align: center;
+      border: none;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 20px;
+      color: #334d5e;
+      background: white;
+      cursor: pointer;
+      img {
+        height: 24px;
+        width: 24px;
+      }
+    }
+    .profile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      text-align: center;
+      color: white;
+      cursor: pointer;
+      img {
+        height: 32px;
+        width: 32px;
+      }
+    }
+  }
+}

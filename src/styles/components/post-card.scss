@@ -1,0 +1,79 @@
+.post-card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  background: white;
+  border-radius: 10px;
+  .tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    border: 1px solid #eaecf0;
+    border-radius: 12px;
+    background: #f8fafc;
+    color: #334d5e;
+  }
+  .title {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 38px;
+    color: #334d5e;
+  }
+  .user {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 12px;
+    .user-name {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 23px;
+      color: #334d5e;
+    }
+    .user-info {
+      display: flex;
+      justify-content: center;
+      gap: 7px;
+      .user-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2px 7px;
+        font-size: 11px;
+        font-weight: 600;
+        border: 1px solid #334d5eb2;
+        border-radius: 2px;
+        color: #334d5eb2;
+      }
+      .user-tier {
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 17px;
+        color: #334d5e;
+      }
+    }
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #334d5e;
+  }
+  img {
+    width: 682px;
+    height: 486px;
+  }
+}

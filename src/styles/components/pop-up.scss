@@ -1,0 +1,146 @@
+.pop-up-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  background: #00000099;
+  font-family: "Roboto", sans-serif;
+  .pop-up {
+    width: 700px;
+    position: relative;
+    border-radius: 20px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 40px;
+    &.margin {
+      margin-top: 150px;
+    }
+    .close-icon {
+      position: absolute;
+      top: 55px;
+      right: 40px;
+      cursor: pointer;
+      width: 24px;
+      height: 24px;
+    }
+    .title {
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 42px;
+      margin-bottom: 20px;
+    }
+    .pop-up-input {
+      width: 660px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 15px;
+      padding: 30px 20px;
+      border-radius: 10px;
+      background: #eaecf0;
+      margin-bottom: 20px;
+      .question {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21px;
+      }
+      input {
+        border: none;
+        background: #eaecf0;
+        font-family: "Roboto";
+      }
+      textarea:focus,
+      input:focus {
+        outline: none;
+      }
+      .date-range-input {
+        input {
+          width: 90px;
+          cursor: pointer;
+          font-family: "Roboto";
+          margin-right: 15px;
+        }
+      }
+    }
+    .loading-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      .loading-info {
+        max-width: 345px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+      }
+      .loading-icon {
+        width: 78px;
+        height: 78px;
+        animation: rotate 2s linear infinite;
+        margin-top: 10px;
+      }
+    }
+    .travel-guide {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      .guide-title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 33px;
+      }
+      .guide-description {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+      }
+      .guide-image {
+        width: 100%;
+      }
+      .travel-guide-card {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 30px;
+        border-radius: 10px;
+        background: #eaecf0;
+        .title {
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 33px;
+        }
+        .info {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20px;
+        }
+        .actions {
+          display: flex;
+          align-items: space-between;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
